@@ -10,6 +10,7 @@ let count = 0;
 updateDisplay();
 
 // inputField.addEventListener('input', () => {
+    
 
 
 //     console.log(inputField);

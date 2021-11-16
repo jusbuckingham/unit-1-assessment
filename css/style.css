@@ -4,3 +4,19 @@ section {
 	align-items: center;  /* centers vertically in row layout */
 	/* flex-direction: column; will set layout to column instead of row */
 }
+
+button {
+    background-color: grey;
+    border-style: outset;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: #ddd;
+  }
