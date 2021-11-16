@@ -1,22 +1,29 @@
-let input = 1;
-let count = 0;
-let input = document.querySelector('.input');
+// let input = 1;
+
+let countDisplay = document.querySelector('.count-display');
+let inputField = document.querySelector('input').value;
+console.log(input);
 let plusButton = document.querySelector('.plus');
 let minusButton = document.querySelector('.minus');
 
+let count = 0;
 
-updateInput();
+updateDisplay();
 
-plusButton.addEventListener("click",function (e) {
+plusButton.addEventListener("click",()=>{
     count++;
-    updateInput();
+    updateDisplay();
 }) ;
 
-counterMinusElem.addEventListener("click",()=>{
+minusButton.addEventListener("click",()=>{
     count--;
-    updateInput();
+    updateDisplay();
 });
 
-function updateInput(){
-    counterDisplayElem.innerHTML = count;
+function updateDisplay(){
+    countDisplay.innerHTML = count;
 };
+
+// function myFunction() {
+//     document.getElementById(".input").value = "1";
+// }
