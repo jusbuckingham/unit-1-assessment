@@ -1,17 +1,18 @@
 let countDisplay = document.querySelector('.count-display');
-let inputField = document.querySelector('input').value;
+let inputField = document.querySelector('input');
 let plusButton = document.querySelector('.plus');
 let minusButton = document.querySelector('.minus');
 
-// let input = inputField.addEventListener('input', () => {
-//     return inputField;
-
-// });
 
 let count = 0;
 
 updateDisplay();
 
+// let input = inputField.addEventListener("input", function(e) {
+//     return input.value;
+//     console.log(input);
+
+// });
 
 plusButton.addEventListener("click", () => {
     count++;
@@ -26,7 +27,3 @@ minusButton.addEventListener("click", () => {
 function updateDisplay() {
     countDisplay.innerHTML = count;
 };
-
-// function myFunction() {
-//     document.getElementById(".input").value = "1";
-// }
